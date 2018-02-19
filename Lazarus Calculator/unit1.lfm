@@ -1,0 +1,153 @@
+object Form1: TForm1
+  Left = 582
+  Height = 389
+  Top = 153
+  Width = 383
+  Caption = 'Form1'
+  ClientHeight = 389
+  ClientWidth = 383
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    Left = 28
+    Height = 24
+    Top = 22
+    Width = 229
+    Caption = 'Car Finance Calculator'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object lblCarModel: TLabel
+    Left = 80
+    Height = 15
+    Top = 83
+    Width = 87
+    Caption = 'Car Make Model'
+    ParentColor = False
+  end
+  object edtCarModel: TEdit
+    Left = 184
+    Height = 23
+    Top = 80
+    Width = 136
+    TabOrder = 0
+  end
+  object lblPrice: TLabel
+    Left = 141
+    Height = 15
+    Top = 123
+    Width = 26
+    Caption = 'Price'
+    ParentColor = False
+    OnClick = lblPriceClick
+  end
+  object edtPrice: TEdit
+    Left = 240
+    Height = 23
+    Top = 115
+    Width = 80
+    TabOrder = 1
+  end
+  object lblRate: TLabel
+    Left = 104
+    Height = 15
+    Top = 155
+    Width = 116
+    Caption = 'Finance Rate (APR %) '
+    ParentColor = False
+    OnClick = lblPriceClick
+  end
+  object edtRate: TEdit
+    Left = 240
+    Height = 23
+    Top = 152
+    Width = 80
+    TabOrder = 2
+    Text = '3.4'
+  end
+  object lblTerm: TLabel
+    Left = 114
+    Height = 15
+    Top = 195
+    Width = 57
+    Caption = 'loan TERM'
+    ParentColor = False
+    OnClick = lblPriceClick
+  end
+  object lstTerms: TListBox
+    Left = 240
+    Height = 24
+    Top = 184
+    Width = 80
+    ExtendedSelect = False
+    Items.Strings = (
+      '12'
+      '24'
+      '36'
+      '48'
+    )
+    ItemHeight = 15
+    ItemIndex = 0
+    TabOrder = 3
+  end
+  object lblCost: TLabel
+    Left = 152
+    Height = 15
+    Top = 240
+    Width = 66
+    Caption = 'Total Cost  $'
+    ParentColor = False
+  end
+  object lblMonthlyPayment: TLabel
+    Left = 114
+    Height = 15
+    Top = 273
+    Width = 104
+    Caption = 'Monthly Payment $'
+    ParentColor = False
+    OnClick = lblMonthlyPaymentClick
+  end
+  object btnCalc: TButton
+    Left = 248
+    Height = 25
+    Top = 320
+    Width = 75
+    Caption = 'Calculate'
+    OnClick = btnCalcClick
+    TabOrder = 4
+  end
+  object btnClear: TButton
+    Left = 128
+    Height = 25
+    Top = 320
+    Width = 75
+    Caption = 'Clear'
+    OnClick = btnClearClick
+    TabOrder = 5
+  end
+  object edtTotalCost: TEdit
+    Left = 230
+    Height = 23
+    Top = 238
+    Width = 92
+    Color = clCream
+    OnChange = edtTotalCostChange
+    ReadOnly = True
+    TabOrder = 6
+  end
+  object edtMonthlyPayment: TEdit
+    Left = 230
+    Height = 23
+    Top = 266
+    Width = 92
+    Color = clCream
+    ReadOnly = True
+    TabOrder = 7
+  end
+end
